@@ -1,0 +1,111 @@
+/* About */
+
+.about {
+    overflow: hidden;
+
+    .column-1 {
+        position: relative;
+
+        .title-sm {
+            color: red;
+            padding: 0px 20px;
+
+            @media (min-width:1200px) {
+              padding:0px 80px;
+             
+            } 
+          }
+
+        .text {
+            margin-top: 1rem;
+            padding: 10px 20px;
+            padding-right: 50px;
+
+            @media (min-width:1200px) {
+              padding: 0px 30px 20px 80px;
+             
+            } 
+            
+          }
+
+        .downbtn{
+            margin: 10px 0px;
+            
+            .downloadbtn{
+                border: 1px solid;
+                padding: 10px;
+                border-radius: 20px;
+                margin: 15px;
+                color: red;
+                text-decoration: none;
+
+                @media (min-width:1200px) {
+                  margin:0px 80px;
+                 
+                } 
+              }
+          }
+        
+      }
+
+      .column-2{
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-width: 300px;
+
+            @media (min-width: 768px) { 
+              max-width: 600px;
+            }
+         
+      
+          }
+          
+      }
+  }
+  
+  // Line under about me
+  .about .title:after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: red;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+  
+  // about in the background
+  .about .column-1:before {
+    content: "About";
+    position: absolute;
+    font-size: 6rem;
+    font-weight: 800;
+    color: red;
+    opacity: 0.04;
+    top: 20px;
+    left: 0;
+    line-height: 0;
+    padding: 20px;
+
+    @media (min-width:1200px) {
+      padding:0px 80px;
+     
+    } 
+  }
+
+  // Hover btn
+  .downloadbtn:hover{
+    background: red;
+  }
+
+  i:hover{
+    color: cadetblue;
+  }
+
+
+  /* End About */
